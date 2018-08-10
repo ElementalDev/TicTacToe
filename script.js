@@ -14,3 +14,4 @@
 //Check for winning conditions.
 //BONUS
   //Could create the grid and style it here.
+  //Let user select how big they would like the border to be
