@@ -4,6 +4,8 @@
   //Display either a O or a X
   //Change turn
 //Make it turn based
+  //Functions?
+  //Even and Odd?
 //Allow for all winning conditions
   //Lines
   //Diagonals
