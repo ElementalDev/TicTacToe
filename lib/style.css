@@ -1,0 +1,14 @@
+.container {
+  height: 606px;
+  width: 606px;
+  margin: auto;
+  border: 1px solid black;
+  padding: 0px;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  float: right;
+}
