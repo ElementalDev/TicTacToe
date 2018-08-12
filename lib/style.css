@@ -10,6 +10,8 @@ body {
 
 h1{
   text-align: center;
+  font-size: 80px;
+  text-decoration: underline;
 }
 
 
@@ -19,6 +21,32 @@ h1{
   margin: auto;
   border: 1px solid black;
   padding: 0px;
+}
+
+/* Styling header */
+
+@keyframes breathe {
+  0% {
+    transform: scale(0.8);
+  }
+  25% {
+    transform: scale(1);
+    color: #0000FF99;
+  }
+  60% {
+    transform: scale(0.8);
+    color: #FF000099;
+  }
+  100% {
+    transform: scale(0.8);
+    color: #000;
+  }
+
+
+}
+
+#gameTitle {
+  animation: breathe 5s ease-out infinite normal;
 }
 
 /* Styling the tally table */
@@ -51,7 +79,13 @@ h1{
   margin: auto;
   width: 200px;
   font-size: 30px;
+  background-color: #0000FFBB;
+  color: white;
+  border-radius: 300px;
+}
 
+#reset:hover {
+  background-color: #0000FF66;
 }
 
 /* Styling the X and O container */
