@@ -8,9 +8,10 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
-h1, h2 {
+h1{
   text-align: center;
 }
+
 
 .container {
   height: 606px;
@@ -46,7 +47,11 @@ h1, h2 {
 /* Reset button style */
 
 #reset {
+  display: block;
   margin: auto;
+  width: 200px;
+  font-size: 30px;
+
 }
 
 /* Styling the X and O container */
