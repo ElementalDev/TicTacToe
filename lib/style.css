@@ -2,10 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-/* master styles */
+/* Master styles */
 
 body {
   font-family: Montserrat, sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
 }
 
 .container {
@@ -18,8 +22,31 @@ body {
 
 /* Styling the tally table */
 
-table {
+#tallyTable {
+  font-size: 24px;
+  margin-right: 20px;
   float: right;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#crossTitle, #naughtTitle {
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+#crossTitle{
+  border-right: 1px solid black;
+}
+
+#crossTally{
+  border-right: 1px solid black;
+}
+
+/* Reset button style */
+
+#reset {
+  margin: auto;
 }
 
 /* Styling the X and O container */
@@ -31,20 +58,23 @@ table {
   float: left;
 }
 
+.box:hover {
+  background-color: #9d9d9d77;
+}
+
 /* Styling the X and O */
 
 #cross, #naught {
-
   font-size: 165px;
   margin: 0;
 }
 
 div #cross {
-  background-color: #FF000077;
+  background-color: #FF000099;
   color: white;
 }
 
 div #naught {
-  background-color: #0000FF77;
+  background-color: #0000FF99;
   color: white;
 }
