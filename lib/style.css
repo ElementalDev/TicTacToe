@@ -1,0 +1,132 @@
+/* Google fonts import */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Master styles */
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+h1{
+  text-align: center;
+  font-size: 80px;
+  text-decoration: underline;
+}
+
+.container {
+  height: 556px;
+  width: 556px;
+  margin: auto;
+  padding: 0px;
+}
+
+/* Styling header */
+
+@keyframes breathe {
+  0% {
+    transform: scale(0.8);
+  }
+  25% {
+    transform: scale(1);
+    color: #0000FF99;
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: scale(0.8);
+    color: #FF000099;
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: scale(0.8);
+    color: #000;
+  }
+}
+
+#gameTitle {
+  animation: breathe 3s ease-out infinite normal;
+}
+
+/* Styling the tally table */
+
+#tallyTable {
+  font-size: 35px;
+  margin-right: 20px;
+  float: right;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#crossTitle, #naughtTitle {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+#naughtTitle{
+  color: blue;
+}
+
+#crossTitle{
+  border-right: 1px solid black;
+  color: red;
+}
+
+#crossTally{
+  border-right: 1px solid black;
+}
+
+/* Subheading style */
+
+#turn {
+  font-size: 35px;
+}
+
+/* Reset button style */
+
+#reset {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  font-size: 30px;
+  background-color: #0000FFBB;
+  color: white;
+  border-radius: 300px;
+}
+
+#reset:hover {
+  background-color: #0000FF66;
+}
+
+#reset:active {
+  background-color: #FF0000BB;
+}
+
+/* Styling the X and O container */
+.box {
+  height: 183px;
+  width: 183px;
+  border: 1px solid black;
+  text-align: center;
+  float: left;
+}
+
+.box:hover {
+  background-color: #9d9d9d77;
+}
+
+/* Styling the X and O */
+
+.cross, .naught {
+  font-size: 150px;
+  margin: 0;
+}
+
+div .cross {
+  background-color: #FF000099;
+  color: white;
+}
+
+div .naught {
+  background-color: #0000FF99;
+  color: white;
+}
