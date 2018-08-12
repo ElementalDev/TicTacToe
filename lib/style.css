@@ -1,3 +1,13 @@
+/* Google fonts import */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* master styles */
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
 .container {
   height: 606px;
   width: 606px;
@@ -6,6 +16,13 @@
   padding: 0px;
 }
 
+/* Styling the tally table */
+
+table {
+  float: right;
+}
+
+/* Styling the X and O container */
 .box {
   height: 200px;
   width: 200px;
@@ -14,17 +31,20 @@
   float: left;
 }
 
-.gameimg {
-  width: 100%;
+/* Styling the X and O */
+
+#cross, #naught {
+
+  font-size: 165px;
+  margin: 0;
 }
 
-#cross {
-  font-family: helvetica;
-  font-size: 60px;
-
+div #cross {
+  background-color: #FF000077;
+  color: white;
 }
 
-#naught {
-  font-family: helvetica;
-  font-size: 60px;
+div #naught {
+  background-color: #0000FF77;
+  color: white;
 }
